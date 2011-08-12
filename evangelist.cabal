@@ -1,0 +1,31 @@
+Name:                evangelist
+Version:             0.1
+Synopsis:            Convert functions between native Haskell types and C types
+Description:         This is a more organized version of the example code I 
+                     wrote for an answer on Stack Overflow here: <http://stackoverflow.com/questions/7030476/haskell-function-with-both-an-arbitrary-number-of-arguments-and-io/7035253#7035253>
+                     
+                     It mostly serves as an illustration of doing more 
+                     complicated stuff with type families that's not just 
+                     adding Peano numerals or solving towers of Hanoi or 
+                     whatever other overdone toy examples are out there.
+                     
+                     Suggestions are welcome for making this into something
+                     actually useful, if that should strike anyone's fancy.
+License:             BSD3
+License-file:        LICENSE
+Author:              C. McCann
+Maintainer:          cam@uptoisomorphism.net
+Category:            Data
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Library
+  Exposed-modules:   Data.Convert.Evangelist, 
+                     Data.Convert.Evangelist.Convert, 
+                     Data.Convert.Evangelist.Newtype, 
+                     Data.Convert.Evangelist.Context, 
+                     Data.Convert.Evangelist.CTypes, 
+                     Data.Convert.Evangelist.ImportExport
+
+  Build-depends:     base >= 4 && < 5,
+                     newtype < 1

@@ -1,0 +1,7 @@
+*.prof
+*.hi
+*.agdai
+*.o
+*.a
+dist
+*.txt~
